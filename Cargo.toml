@@ -1,0 +1,11 @@
+[package]
+name = "arg-phone-software"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+debouncr = "0.2.2"
+rodio = "0.19.0"
+
+[target.'cfg(unix)'.dependencies]
+rppal = { version = "0.17.1", features = ["hal"] }
